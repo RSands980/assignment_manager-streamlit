@@ -1,4 +1,8 @@
+from time import time
+
 import streamlit as st
+
+next_assignment_id_number = 3
 
 st.title("Course Management App")
 st.header("Assignments")
@@ -35,6 +39,9 @@ title = st.text_input("Title",placeholder="ex. Homework", help = "This is the na
 description = st.text_area("Description", placeholder="ex. Basics of database design", help="This is a brief description of the assignment")
 due_date = st.date_input("Due Date")
 assignment_type = st.radio("Type",["Homework", "Lab"])
+
+points = st.number_input("Points")
+
 #assignments_type2 = st.selectbox("Type",["Homework", "Lab","Other"])
 #if assignments_type2 == "Other":
 #    assignments_type2 = st.text_input("Assignment Type")
@@ -46,5 +53,28 @@ with st.expander("Assignment Preview",expanded=True):
     st.markdown(f"Title: {title}")
 
 btn_save = st.button("Save", width="stretch")
+
+import time
+
 if btn_save:
-    st.warning("Working on it!")
+    with st.spinner("Saving the Assignment..."):
+        time.sleep(5)
+        if title == "":
+            st.warning("Enter Assignment Title")
+        else:
+            #Add/Create new assignment
+            new_assignment_id = "HW" + str(next_assignment_id_number)
+            next_assignment_id_number += 1
+
+            assignments.append(
+                {
+                 "id" : new_assignment_id,
+                 "title" : title,
+                 "description" : description,
+                 "points" : points,
+                 "type" : assignment_type
+                }
+            )
+
+            st.success("Assignment saved successfully!")
+            st.dataframe(assignments)
