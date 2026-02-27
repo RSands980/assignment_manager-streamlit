@@ -55,6 +55,10 @@ with st.expander("Assignment Preview",expanded=True):
 btn_save = st.button("Save", width="stretch")
 
 import time
+import json
+from pathlib import Path
+
+json_path = Path("assignments.json")
 
 if btn_save:
     with st.spinner("Saving the Assignment..."):
@@ -75,6 +79,9 @@ if btn_save:
                  "type" : assignment_type
                 }
             )
+
+            with json_path.open("w",encoding="utf-8") as f:
+                json.dump(assignments,f,indent=4)
 
             st.success("Assignment saved successfully!")
             st.dataframe(assignments)
