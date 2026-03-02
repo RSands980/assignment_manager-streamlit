@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 import json
-from pathlib import Path, path
+from pathlib import Path
 
 st.title("Course Management App")
 st.divider()
