@@ -44,12 +44,7 @@ if "page" not in st.session_state:
     st.session_state["page"] = "Assignment Dashboard"
 
 if "draft" not in st.session_state:
-    st.session_state["draft"] = {
-        "title": "",
-        "description": "",
-        "points": 0,
-        "type": "homework"
-    }
+    st.session_state["draft"] = {}
 
 # Assignment Dashboard Page
 if st.session_state["page"] == "Assignment Dashboard":
@@ -107,6 +102,8 @@ elif st.session_state["page"] == "Add New Assignment":
 
     if st.button("Save Assignment", key="save_assignment_btn", use_container_width=True):
         with st.spinner("Saving Assignment..."):
+            
+            # ADD new assignment to the assignments
             assignments.append(
                 {
                     "id": str(uuid.uuid4()),
