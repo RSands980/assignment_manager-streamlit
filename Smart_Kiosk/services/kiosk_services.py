@@ -1,4 +1,6 @@
 import uuid
+
+from altair import Order
 #from typing import List, Dict, Optional
 
 
@@ -13,7 +15,7 @@ def place_order(inventory_items: list, item_id: str, quantity: int):
     #check the existing nventory for the item
     if item:
         if item["quantity"] >= quantity:
-            orders.append(
+            Order.append(
                 {
                     "order_id": str(uuid.uuid4())
                 }
