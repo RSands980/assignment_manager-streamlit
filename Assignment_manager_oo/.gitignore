@@ -1,13 +1,6 @@
-# Hide secret API keys
 .env
-
-# Python cache files
 __pycache__/
 *.pyc
-
-# Virtual environment folders
 .venv/
 venv/
-
-# Mac system files
 .DS_Store
