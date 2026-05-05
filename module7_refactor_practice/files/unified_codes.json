@@ -1,0 +1,90 @@
+[
+  {
+    "code": "SHJ3NN",
+    "code_type": "attendance",
+    "course_id": "MISY350",
+    "created_by": "instructor_1",
+    "created_at": "2026-05-05T15:59:17",
+    "expires_at": "2026-05-05T16:29:17",
+    "max_uses": null,
+    "current_uses": 1,
+    "is_active": false,
+    "description": "test code",
+    "usage_log": [
+      {
+        "user_id": "student_1",
+        "used_at": "2026-05-05T16:00:26"
+      }
+    ]
+  },
+  {
+    "code": "A32QE7",
+    "code_type": "attendance",
+    "course_id": "MISY350",
+    "created_by": "instructor_1",
+    "created_at": "2026-05-05T16:02:17",
+    "expires_at": "2026-05-05T16:32:17",
+    "max_uses": null,
+    "current_uses": 0,
+    "is_active": false,
+    "description": "test code",
+    "usage_log": []
+  },
+  {
+    "code": "6Y5XOA",
+    "code_type": "attendance",
+    "course_id": "MISY350",
+    "created_by": "instructor_1",
+    "created_at": "2026-05-05T16:30:13",
+    "expires_at": "2026-05-05T17:00:13",
+    "max_uses": null,
+    "current_uses": 0,
+    "is_active": false,
+    "description": "",
+    "usage_log": []
+  },
+  {
+    "code": "Y20CS3",
+    "code_type": "attendance",
+    "course_id": "MISY350",
+    "created_by": "instructor_1",
+    "created_at": "2026-05-05T16:34:42",
+    "expires_at": "2026-05-05T17:04:42",
+    "max_uses": null,
+    "current_uses": 0,
+    "is_active": false,
+    "description": "",
+    "usage_log": []
+  },
+  {
+    "code": "94YHZA",
+    "code_type": "attendance",
+    "course_id": "MISY350",
+    "created_by": "instructor_1",
+    "created_at": "2026-05-05T16:39:17",
+    "expires_at": "2026-05-05T17:09:17",
+    "max_uses": null,
+    "current_uses": 0,
+    "is_active": false,
+    "description": "",
+    "usage_log": []
+  },
+  {
+    "code": "PPRTZP",
+    "code_type": "attendance",
+    "course_id": "MISY350",
+    "created_by": "instructor_1",
+    "created_at": "2026-05-05T16:40:21",
+    "expires_at": "2026-05-05T17:10:21",
+    "max_uses": null,
+    "current_uses": 1,
+    "is_active": false,
+    "description": "",
+    "usage_log": [
+      {
+        "user_id": "student_1",
+        "used_at": "2026-05-05T16:40:32"
+      }
+    ]
+  }
+]
